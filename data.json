@@ -1,0 +1,347 @@
+{
+  "races": {
+    "Human": {
+      "notes": "Tenacity. Radiation DC applies."
+    },
+    "Ghoul": {
+      "notes": "Evolution. Immune to radiation damage and radiation levels."
+    },
+    "Gen-2 Synth": {
+      "notes": "Inorganic Body. Immune to radiation and poison; no food, drink, sleep, or breathing needed."
+    },
+    "Robot": {
+      "notes": "Inorganic Body. Immune to radiation, poison, and bleeding; no food, drink, sleep, or breathing needed."
+    },
+    "Super Mutant": {
+      "notes": "Evolution. Immune to radiation. Superior Strength: Strength +1, minimum 6, and Carry Load +40."
+    }
+  },
+  "backgrounds": {
+    "Custom Background": {
+      "skillBonuses": [],
+      "trait": "",
+      "startingCaps": 850,
+      "equipment": "Choose any background\u2019s starting equipment, or choose your own items at your GM\u2019s discretion with a budget of 850 caps."
+    },
+    "Cultist": {
+      "skillBonuses": [
+        "Melee Weapons",
+        "Persuasion",
+        "Sneak"
+      ],
+      "trait": "The Sight Beyond",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor with Rank 1 Lead Lined, knife, bolt-action pipe pistol, 15x 9mm bullets, backpack, chain, 3 cram, diluted RadAway, Rad-X, healing powder, 3 dirty water, purified water, 50 caps.",
+        "Ghoul": "Leather armor, knife, bolt-action pipe pistol, 15x 9mm bullets, backpack, chain, 3 cram, 4 dirty water, stimpak, diluted stimpak, 50 caps.",
+        "Super Mutant": "Leather armor, knife, bolt-action pipe pistol, 15x 9mm bullets, backpack, chain, 3 cram, 4 dirty water, stimpak, diluted stimpak, 50 caps.",
+        "Gen-2 Synth": "Leather armor, knife, bolt-action pipe pistol, 15x 9mm bullets, backpack, chain, diluted stimpak, RobCo Quick Fix-it 1.0, overclock hardware, cache clearer, 50 caps.",
+        "Robot": "Leather armor, knife, bolt-action pipe pistol, 15x 9mm bullets, backpack, chain, 2 RobCo Quick Fix-it 1.0, overclock hardware, cache clearer, 50 caps."
+      }
+    },
+    "Doctor": {
+      "skillBonuses": [
+        "Lockpick",
+        "Medicine",
+        "Science"
+      ],
+      "trait": "Do No Harm",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, knife (4 decay), syringer, 2 stimpak loader syringes, lock joint syringe, backpack, first aid kit, 2 diluted stimpaks, diluted RadAway, Rad-X, healing powder, sleeping bag, one person tent, noodle cup, instamash, 2 purified water, 50 caps.",
+        "Ghoul": "Cloth armor, knife (4 decay), syringer, 2 stimpak loader syringes, lock joint syringe, backpack, first aid kit, 2 diluted stimpaks, diluted RadAway, Rad-X, healing powder, sleeping bag, one person tent, noodle cup, instamash, 2 purified water, 50 caps.",
+        "Super Mutant": "Cloth armor, knife (4 decay), syringer, 2 stimpak loader syringes, lock joint syringe, backpack, first aid kit, 2 diluted stimpaks, diluted RadAway, Rad-X, healing powder, sleeping bag, one person tent, noodle cup, instamash, 2 purified water, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, knife (4 decay), syringer, 2 stimpak loader syringes, lock joint syringe, backpack, first aid kit, 2 RobCo Quick Fix-it 1.0, 2 RobCo Quick Fix-it 2.0, diluted RadAway, Rad-X, 2 healing powder, 50 caps.",
+        "Robot": "Cloth armor, knife (4 decay), syringer, 2 stimpak loader syringes, lock joint syringe, backpack, first aid kit, 2 RobCo Quick Fix-it 1.0, 2 RobCo Quick Fix-it 2.0, diluted RadAway, Rad-X, 2 healing powder, 50 caps."
+      }
+    },
+    "Drifter": {
+      "skillBonuses": [
+        "Lockpick",
+        "Sneak",
+        "Unarmed"
+      ],
+      "trait": "Street Rat",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, 5 canned dog food, iguana on a stick, 2 healing powder, 4 dirty water, 2 purified water, lockpicks, one person tent, sleeping bag, whiskey, fixer, 2 jet, 3 cigarettes, psycho, coffee, 50 caps.",
+        "Ghoul": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, 5 canned dog food, iguana on a stick, 2 healing powder, 4 dirty water, 2 purified water, lockpicks, one person tent, sleeping bag, whiskey, fixer, 2 jet, 3 cigarettes, psycho, coffee, 50 caps.",
+        "Super Mutant": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, 5 canned dog food, iguana on a stick, 2 healing powder, 4 dirty water, 2 purified water, lockpicks, one person tent, sleeping bag, whiskey, fixer, 2 jet, 3 cigarettes, psycho, coffee, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, lockpicks, 2 RobCo Quick Fix-it 1.0, 2 overclock hardware, 2 cache clearer, military auto-tank AI upload, flashlight, energy cell, skill magazine, 50 caps.",
+        "Robot": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, lockpicks, 2 RobCo Quick Fix-it 1.0, 2 overclock hardware, 2 cache clearer, military auto-tank AI upload, flashlight, energy cell, skill magazine, 50 caps."
+      }
+    },
+    "Entertainer": {
+      "skillBonuses": [
+        "Barter",
+        "Persuasion",
+        "Intimidation"
+      ],
+      "trait": "A Moment of Respite",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, switchblade, 10mm pistol (3 decay), 10x 10mm ammo, backpack, 2 dynamite, 3 flares, 3 salisbury steak, desert salad, nuka-cola, dirty wastelander, healing powder, stimpak, 2 purified water, 50 caps.",
+        "Ghoul": "Cloth armor, switchblade, 10mm pistol (3 decay), 10x 10mm ammo, backpack, 2 dynamite, 3 flares, 3 salisbury steak, desert salad, nuka-cola, dirty wastelander, healing powder, stimpak, 2 purified water, 50 caps.",
+        "Super Mutant": "Cloth armor, switchblade, 10mm pistol (3 decay), 10x 10mm ammo, backpack, 2 dynamite, 3 flares, 3 salisbury steak, desert salad, nuka-cola, dirty wastelander, healing powder, stimpak, 2 purified water, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, switchblade, 10mm pistol (2 decay), 20x 10mm bullets, backpack, 2 dynamite, 3 flares, 2 RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Cloth armor, switchblade, 10mm pistol (2 decay), 20x 10mm bullets, backpack, 2 dynamite, 3 flares, 2 RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Farmer": {
+      "skillBonuses": [
+        "Crafting",
+        "Intimidation",
+        "Survival"
+      ],
+      "trait": "Hardened by the Earth",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, pitchfork (5 decay), single shotgun (3 decay), 8x 12 gauge ammo, backpack, healing powder, 5 potatoes, 5 tomatoes, 5 mutfruit, 4 purified water, 50 caps.",
+        "Ghoul": "Cloth armor, pitchfork (5 decay), single shotgun (3 decay), 8x 12 gauge ammo, backpack, healing powder, 5 potatoes, 5 tomatoes, 5 mutfruit, 4 purified water, 50 caps.",
+        "Super Mutant": "Cloth armor, pitchfork (5 decay), single shotgun (3 decay), 8x 12 gauge ammo, backpack, healing powder, 5 potatoes, 5 tomatoes, 5 mutfruit, 4 purified water, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, pitchfork (5 decay), sickle, single shotgun (3 decay), 8x 12 gauge ammo, backpack, RobCo Quick Fix-It, 2 potatoes, 2 tomatoes, mutfruit, 50 caps.",
+        "Robot": "Cloth armor, pitchfork (5 decay), sickle, single shotgun (3 decay), 8x 12 gauge ammo, backpack, RobCo Quick Fix-It, 2 potatoes, 2 tomatoes, mutfruit, 50 caps."
+      }
+    },
+    "Guard": {
+      "skillBonuses": [
+        "Guns",
+        "Persuasion",
+        "Melee Weapons"
+      ],
+      "trait": "Vigilant Watch",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Metal armor (1 decay), police baton (2 decay), 9mm pistol, 20x 9mm ammo, 10x 9mm rubber ammo, backpack, sleeping bag, one person tent, binoculars, diluted stimpak, 3 purified water, 2 pork n' beans, coffee, 2 donuts, 50 caps.",
+        "Ghoul": "Metal armor (1 decay), police baton (2 decay), 9mm pistol, 20x 9mm ammo, 10x 9mm rubber ammo, backpack, sleeping bag, one person tent, binoculars, diluted stimpak, 3 purified water, 2 pork n' beans, coffee, 2 donuts, 50 caps.",
+        "Super Mutant": "Metal armor (1 decay), police baton (2 decay), 9mm pistol, 20x 9mm ammo, 10x 9mm rubber ammo, backpack, sleeping bag, one person tent, binoculars, diluted stimpak, 3 purified water, 2 pork n' beans, coffee, 2 donuts, 50 caps.",
+        "Gen-2 Synth": "Metal armor (1 decay), police baton (2 decay), 9mm pistol, 35x 9mm ammo, 20x 9mm rubber ammo, backpack, binoculars, 2 RobCo Quick Fix-it, Milsurp Review magazine, cache clearer, 50 caps.",
+        "Robot": "Metal armor (1 decay), police baton (2 decay), 9mm pistol, 35x 9mm ammo, 20x 9mm rubber ammo, backpack, binoculars, 2 RobCo Quick Fix-it, Milsurp Review magazine, cache clearer, 50 caps."
+      }
+    },
+    "Hermit": {
+      "skillBonuses": [
+        "Explosives",
+        "Medicine",
+        "Survival"
+      ],
+      "trait": "Recluse",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Multilayered armor (2 decay), sharpened pole, 2 dynamite, backpack, sleeping bag, one person tent, bear trap, mutt chops, gecko steak, diluted RadAway, 3 healing powder, first aid kit, purified water, 2 dirty water, 50 caps.",
+        "Ghoul": "Multilayered armor (2 decay), sharpened pole, 2 dynamite, backpack, sleeping bag, one person tent, bear trap, mutt chops, gecko steak, iguana on a stick, 4 healing powder, first aid kit, 4 dirty water, 50 caps.",
+        "Super Mutant": "Multilayered armor (2 decay), sharpened pole, 2 dynamite, backpack, sleeping bag, one person tent, bear trap, mutt chops, gecko steak, iguana on a stick, 4 healing powder, first aid kit, 4 dirty water, 50 caps.",
+        "Gen-2 Synth": "Multilayered armor, sharpened pole with strengthened upgrade, 3 dynamite, backpack, bear trap, 2 RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Multilayered armor, sharpened pole with strengthened upgrade, 3 dynamite, backpack, bear trap, 2 RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Journalist": {
+      "skillBonuses": [
+        "Lockpick",
+        "Persuasion",
+        "Sneak"
+      ],
+      "trait": "Persistent",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, switchblade, 9mm pistol (3 decay), 13x 9mm bullets, backpack, flashlight, energy cell, bandolier, lockpicks, 3 cram, diluted RadAway, Rad-X, diluted stimpak, 3 purified water, 50 caps.",
+        "Ghoul": "Cloth armor, switchblade, 9mm pistol (3 decay), 13x 9mm bullets, backpack, flashlight, energy cell, bandolier, lockpicks, 3 cram, diluted stimpak, calmex, 3 purified water, 50 caps.",
+        "Super Mutant": "Cloth armor, switchblade, 9mm pistol (3 decay), 13x 9mm bullets, backpack, flashlight, energy cell, bandolier, lockpicks, 3 cram, diluted stimpak, calmex, 3 purified water, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, switchblade, 9mm pistol (2 decay), 26x 9mm bullets, backpack, flashlight, energy cell, bandolier, lockpicks, RobCo Quick Fix-it 1.0, coolant rerouter, 50 caps.",
+        "Robot": "Cloth armor, switchblade, 9mm pistol (2 decay), 26x 9mm bullets, backpack, flashlight, energy cell, bandolier, lockpicks, RobCo Quick Fix-it 1.0, coolant rerouter, 50 caps."
+      }
+    },
+    "Laborer": {
+      "skillBonuses": [
+        "Crafting",
+        "Persuasion",
+        "Melee Weapons"
+      ],
+      "trait": "Long Days, Long Nights",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, crowbar, pipe pistol (2 decay), 10x 9mm bullets, backpack, canteen, rope, sleeping bag, one person tent, potato crisps, 2 instamash, radstag stew, 2 purified water, 2 healing powder, 50 caps.",
+        "Ghoul": "Cloth armor, crowbar, pipe pistol (2 decay), 10x 9mm bullets, backpack, canteen, rope, sleeping bag, one person tent, potato crisps, 2 instamash, radstag stew, 4 dirty water, stimpak, 50 caps.",
+        "Super Mutant": "Cloth armor, crowbar, pipe pistol (2 decay), 10x 9mm bullets, backpack, canteen, rope, sleeping bag, one person tent, potato crisps, 2 instamash, radstag stew, 2 purified water, 2 healing powder, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, crowbar, pipe pistol (2 decay), 10x 9mm bullets, backpack, rope, flashlight, energy cell, RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Cloth armor, crowbar, pipe pistol (2 decay), 10x 9mm bullets, backpack, rope, flashlight, energy cell, RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Mechanic": {
+      "skillBonuses": [
+        "Crafting",
+        "Guns",
+        "Science"
+      ],
+      "trait": "Proper Maintenance",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, wrench, pipe revolver, 10x .44 bullets, backpack, bandolier, canteen, rope, sleeping bag, one person tent, 3 cram, 3 purified water, weapon repair kit, 50 caps.",
+        "Ghoul": "Cloth armor, wrench, pipe revolver, 10x .44 bullets, backpack, bandolier, canteen, rope, sleeping bag, one person tent, 3 cram, 3 purified water, weapon repair kit, 50 caps.",
+        "Super Mutant": "Cloth armor, wrench, pipe revolver, 10x .44 bullets, backpack, bandolier, canteen, rope, sleeping bag, one person tent, 3 cram, 3 purified water, weapon repair kit, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, wrench, pipe revolver, 15x .44 bullets, backpack, bandolier, rope, RobCo Quick Fix-it 1.0, 2 weapon repair kit, 50 caps.",
+        "Robot": "Cloth armor, wrench, pipe revolver, 15x .44 bullets, backpack, bandolier, rope, RobCo Quick Fix-it 1.0, 2 weapon repair kit, 50 caps."
+      }
+    },
+    "Mercenary": {
+      "skillBonuses": [
+        "Guns",
+        "Melee Weapons",
+        "Survival"
+      ],
+      "trait": "Sweeten the Deal",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 10x .44 bullets, backpack, 2 cram, sleeping bag, one person tent, diluted stimpak, purified water, 50 caps.",
+        "Ghoul": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 10x .44 bullets, backpack, 2 cram, sleeping bag, one person tent, diluted stimpak, purified water, 50 caps.",
+        "Super Mutant": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 10x .44 bullets, backpack, 2 cram, sleeping bag, one person tent, diluted stimpak, purified water, 50 caps.",
+        "Gen-2 Synth": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 12x .44 bullets, backpack, RobCo Quick Fix-it 1.0, RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 12x .44 bullets, backpack, RobCo Quick Fix-it 1.0, RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Pastor": {
+      "skillBonuses": [
+        "Barter",
+        "Intimidation",
+        "Persuasion"
+      ],
+      "trait": "Embolden",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, single shotgun (3 decay), 8x 12 gauge ammo, backpack, sleeping bag, one person tent, 3 pork 'n beans, donut, coffee, 3 purified water, first aid kit, 3 healing powder, 50 caps.",
+        "Ghoul": "Cloth armor, single shotgun (3 decay), 8x 12 gauge ammo, backpack, sleeping bag, one person tent, 3 pork 'n beans, donut, coffee, 3 purified water, first aid kit, 3 healing powder, 50 caps.",
+        "Super Mutant": "Cloth armor, single shotgun (3 decay), 8x 12 gauge ammo, backpack, sleeping bag, one person tent, 3 pork 'n beans, donut, coffee, 3 purified water, first aid kit, 3 healing powder, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, single shotgun (2 decay), 8x 12 gauge ammo, backpack, flashlight, energy cell, first aid kit, RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Cloth armor, single shotgun (2 decay), 8x 12 gauge ammo, backpack, flashlight, energy cell, first aid kit, RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Pilgrim": {
+      "skillBonuses": [
+        "Energy Weapons",
+        "Sneak",
+        "Survival"
+      ],
+      "trait": "Long Roads",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Leather armor with light upgrade, sharpened pole, laser rifle (5 decay), energy cell, backpack, sleeping bag, one person tent, 2 mutfruit, 2 apples, vegetable soup, 2 purified water, healing powder, 50 caps.",
+        "Ghoul": "Leather armor with light upgrade, sharpened pole, laser rifle (5 decay), energy cell, backpack, sleeping bag, one person tent, 2 mutfruit, 2 apples, vegetable soup, 3 dirty water, nuka-cola, diluted stimpak, 50 caps.",
+        "Super Mutant": "Leather armor with light upgrade, sharpened pole, laser rifle (5 decay), energy cell, backpack, sleeping bag, one person tent, 2 mutfruit, 2 apples, vegetable soup, 3 dirty water, nuka-cola, diluted stimpak, 50 caps.",
+        "Gen-2 Synth": "Leather armor with light upgrade, sharpened pole, laser rifle (5 decay), energy cell, backpack, bandolier, binoculars, grappling hook, rope, RobCo Quick Fix-it 1.0, 50 caps.",
+        "Robot": "Leather armor with light upgrade, sharpened pole, laser rifle (5 decay), energy cell, backpack, bandolier, binoculars, grappling hook, rope, RobCo Quick Fix-it 1.0, 50 caps."
+      }
+    },
+    "Pit Fighter": {
+      "skillBonuses": [
+        "Barter",
+        "Melee Weapons",
+        "Unarmed"
+      ],
+      "trait": "Endure the Battle",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Lead pipe (2 decay), brass knuckles, spiked knuckles, bandolier, ball bearings, sleeping bag, one person tent, 3 cram, vodka, 3 healing powder, 3 purified water, diluted stimpak, 50 caps.",
+        "Ghoul": "Lead pipe (2 decay), brass knuckles, spiked knuckles, bandolier, ball bearings, sleeping bag, one person tent, 3 cram, vodka, 3 healing powder, 3 purified water, diluted stimpak, 50 caps.",
+        "Super Mutant": "Lead pipe (2 decay), brass knuckles, spiked knuckles, bandolier, ball bearings, sleeping bag, one person tent, 3 cram, vodka, 3 healing powder, 3 purified water, diluted stimpak, 50 caps.",
+        "Gen-2 Synth": "Metal armor (1 decay), lead pipe (2 decay), brass knuckles, spiked knuckles, bandolier, ball bearings, RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Metal armor (1 decay), lead pipe (2 decay), brass knuckles, spiked knuckles, bandolier, ball bearings, RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Scientist": {
+      "skillBonuses": [
+        "Energy Weapons",
+        "Lockpick",
+        "Science"
+      ],
+      "trait": "Field Research",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, laser pistol, 2 energy cell, backpack, sleeping bag, one person tent, 3 cram, 2 purified water, diluted RadAway, Rad-X, stimpak, 50 caps.",
+        "Ghoul": "Cloth armor, laser pistol, 2 energy cell, backpack, sleeping bag, one person tent, 3 cram, 2 purified water, diluted RadAway, Rad-X, stimpak, 50 caps.",
+        "Super Mutant": "Cloth armor, laser pistol, 2 energy cell, backpack, sleeping bag, one person tent, 3 cram, 2 purified water, diluted RadAway, Rad-X, stimpak, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, laser pistol, 2 energy cell, backpack, 2 RobCo Quick Fix-it 2.0, Programmer's Digest magazine, data scrubber, 50 caps.",
+        "Robot": "Cloth armor, laser pistol, 2 energy cell, backpack, 2 RobCo Quick Fix-it 2.0, Programmer's Digest magazine, data scrubber, 50 caps."
+      }
+    },
+    "Scribe": {
+      "skillBonuses": [
+        "Crafting",
+        "Energy Weapons",
+        "Medicine"
+      ],
+      "trait": "Wasteland Knowledge",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, laser pistol, 2 energy cell, backpack, sleeping bag, one person tent, 3 cram, 2 purified water, diluted RadAway, Rad-X, stimpak, 50 caps.",
+        "Ghoul": "Cloth armor, laser pistol, 2 energy cell, backpack, sleeping bag, one person tent, 3 cram, 2 purified water, diluted RadAway, Rad-X, stimpak, 50 caps.",
+        "Super Mutant": "Cloth armor, laser pistol, 2 energy cell, backpack, sleeping bag, one person tent, 3 cram, 2 purified water, diluted RadAway, Rad-X, stimpak, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, laser pistol, 2 energy cell, backpack, 2 RobCo Quick Fix-it 2.0, Programmer's Digest magazine, data scrubber, 50 caps.",
+        "Robot": "Cloth armor, laser pistol, 2 energy cell, backpack, 2 RobCo Quick Fix-it 2.0, Programmer's Digest magazine, data scrubber, 50 caps."
+      }
+    },
+    "Soldier": {
+      "skillBonuses": [
+        "Explosives",
+        "Guns",
+        "Medicine"
+      ],
+      "trait": "Efficient Combatant",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 10x .44 bullets, backpack, 2 cram, sleeping bag, one person tent, diluted stimpak, purified water, 50 caps.",
+        "Ghoul": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 10x .44 bullets, backpack, 2 cram, sleeping bag, one person tent, diluted stimpak, purified water, 50 caps.",
+        "Super Mutant": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 10x .44 bullets, backpack, 2 cram, sleeping bag, one person tent, diluted stimpak, purified water, 50 caps.",
+        "Gen-2 Synth": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 12x .44 bullets, backpack, RobCo Quick Fix-it 1.0, RobCo Quick Fix-it 2.0, 50 caps.",
+        "Robot": "Leather armor, combat knife (2 decay), trail carbine (2 decay), 12x .44 bullets, backpack, RobCo Quick Fix-it 1.0, RobCo Quick Fix-it 2.0, 50 caps."
+      }
+    },
+    "Trader": {
+      "skillBonuses": [
+        "Barter",
+        "Persuasion",
+        "Intimidation"
+      ],
+      "trait": "Bargaining Chip",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, 5 canned dog food, iguana on a stick, 2 healing powder, 4 dirty water, 2 purified water, lockpicks, one person tent, sleeping bag, whiskey, fixer, 2 jet, 3 cigarettes, psycho, coffee, 50 caps.",
+        "Ghoul": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, 5 canned dog food, iguana on a stick, 2 healing powder, 4 dirty water, 2 purified water, lockpicks, one person tent, sleeping bag, whiskey, fixer, 2 jet, 3 cigarettes, psycho, coffee, 50 caps.",
+        "Super Mutant": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, 5 canned dog food, iguana on a stick, 2 healing powder, 4 dirty water, 2 purified water, lockpicks, one person tent, sleeping bag, whiskey, fixer, 2 jet, 3 cigarettes, psycho, coffee, 50 caps.",
+        "Gen-2 Synth": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, lockpicks, 2 RobCo Quick Fix-it 1.0, 2 overclock hardware, 2 cache clearer, military auto-tank AI upload, flashlight, energy cell, skill magazine, 50 caps.",
+        "Robot": "Cloth armor, shiv, pipe pistol (2 decay), 15x 9mm bullets, backpack, lockpicks, 2 RobCo Quick Fix-it 1.0, 2 overclock hardware, 2 cache clearer, military auto-tank AI upload, flashlight, energy cell, skill magazine, 50 caps."
+      }
+    },
+    "Vault Dweller": {
+      "skillBonuses": [
+        "Medicine",
+        "Persuasion",
+        "Science"
+      ],
+      "trait": "Talented",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Vault suit, 10mm pistol, 10x 10mm ammo, backpack, sleeping bag, one person tent, canteen, weapon repair kit, pip-boy (any), BlamCo Mac & Cheese, Salisbury Steak, Yum Yum Deviled Eggs, coffee, 4 purified water, stimpak.",
+        "Ghoul": "Vault suit, 10mm pistol, 10x 10mm ammo, backpack, sleeping bag, one person tent, canteen, weapon repair kit, pip-boy (any), BlamCo Mac & Cheese, Salisbury Steak, Yum Yum Deviled Eggs, coffee, 4 purified water, stimpak.",
+        "Super Mutant": "Vault suit, 10mm pistol, 10x 10mm ammo, backpack, sleeping bag, one person tent, canteen, weapon repair kit, pip-boy (any), BlamCo Mac & Cheese, Salisbury Steak, Yum Yum Deviled Eggs, coffee, 4 purified water, stimpak.",
+        "Gen-2 Synth": "Vault suit, laser pistol, 2 energy cell, backpack, pip-boy (any), 2 RobCo Quick Fix-it 2.0, Programmer's Digest magazine, data scrubber, 50 caps.",
+        "Robot": "Vault suit, laser pistol, 2 energy cell, backpack, pip-boy (any), 2 RobCo Quick Fix-it 2.0, Programmer's Digest magazine, data scrubber, 50 caps."
+      }
+    },
+    "Wastelander": {
+      "skillBonuses": [
+        "Guns",
+        "Survival",
+        "Unarmed"
+      ],
+      "trait": "Adventurer's Instinct",
+      "startingCaps": 50,
+      "equipmentByRace": {
+        "Human": "Leather armor, sharpened pole, 10mm pistol, 10x 10mm ammo, backpack, sleeping bag, one person tent, 2 mutfruit, 2 apples, vegetable soup, 2 purified water, healing powder, 50 caps.",
+        "Ghoul": "Leather armor, sharpened pole, 10mm pistol, 10x 10mm ammo, backpack, sleeping bag, one person tent, 2 mutfruit, 2 apples, vegetable soup, 3 dirty water, nuka-cola, diluted stimpak, 50 caps.",
+        "Super Mutant": "Leather armor, sharpened pole, 10mm pistol, 10x 10mm ammo, backpack, sleeping bag, one person tent, 2 mutfruit, 2 apples, vegetable soup, 3 dirty water, nuka-cola, diluted stimpak, 50 caps.",
+        "Gen-2 Synth": "Leather armor, sharpened pole, 10mm pistol, 10x 10mm ammo, backpack, bandolier, binoculars, grappling hook, rope, RobCo Quick Fix-it 1.0, 50 caps.",
+        "Robot": "Leather armor, sharpened pole, 10mm pistol, 10x 10mm ammo, backpack, bandolier, binoculars, grappling hook, rope, RobCo Quick Fix-it 1.0, 50 caps."
+      }
+    }
+  }
+}

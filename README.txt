@@ -1,0 +1,1 @@
+Render-ready full-suite Fallout builder. Start with `python app.py` locally or deploy on Render.
