@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fallout Builder Full Suite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="title">
+    <h1>FALLOUT TTRPG // FULL BUILDER</h1>
+    <div class="sub">CRT-styled web app with point-buy buttons, background/race automation, starting caps, live sheet preview, and PDF export into your uploaded character-sheet template.</div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Identity</h2>
+      <form id="builderForm" action="/download-sheet.pdf" method="post">
+        <div class="subgrid">
+          <div class="field"><label>Name</label><input name="name" id="name"></div>
+          <div class="field"><label>Level</label><input name="level" id="level" type="number" min="1" max="30" value="1"></div>
+          <div class="field"><label>Race</label><select name="race" id="race"></select></div>
+          <div class="field"><label>Background</label><select name="background" id="background"></select></div>
+          <div class="field"><label>Job</label><input name="job" id="job"></div>
+          <div class="field"><label>Caps</label><input name="caps" id="caps" readonly></div>
+        </div>
+
+        <div class="sheet-grid">
+          <div class="field"><label>Personality Trait</label><input name="personality" id="personality"></div>
+          <div class="field"><label>Ideal</label><input name="ideal" id="ideal"></div>
+          <div class="field"><label>Bond</label><input name="bond" id="bond"></div>
+          <div class="field"><label>Flaw</label><input name="flaw" id="flaw"></div>
+        </div>
+
+        <div class="field"><label>Traits & Perks</label><textarea name="traits" id="traits"></textarea></div>
+
+        <h2>S.P.E.C.I.A.L.</h2>
+        <div class="special-grid">
+          {% for key, letter in [('str','S'),('per','P'),('end','E'),('cha','C'),('int','I'),('agi','A'),('luk','L')] %}
+          <div class="stat">
+            <div class="letter">{{ letter }}</div>
+            <div class="stepper">
+              <button type="button" onclick="changeStat('{{ key }}', -1)">−</button>
+              <span class="value" id="val_{{ key }}">5</span>
+              <button type="button" onclick="changeStat('{{ key }}', 1)">+</button>
+            </div>
+            <div class="mod" id="mod_{{ key }}">MOD +0</div>
+            <input type="hidden" name="{{ key }}" id="{{ key }}" value="5">
+          </div>
+          {% endfor %}
+        </div>
+        <div class="points" id="pointBuy">POINT BUY STATUS // Remaining: 3</div>
+        <div class="mini-note">Rule text says “5 minus your score,” but the example in the book shows 7 Luck = +2 and 3 Strength = −2, so this builder uses <strong>score − 5</strong>, matching the example. It also adds half Luck modifier, rounded down, to all skills. fileciteturn1file0L34-L52</div>
+
+        <div class="actions">
+          <button type="button" onclick="resetBuild()">Reset Build</button>
+          <button type="submit">Download Filled Sheet PDF</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="panel">
+      <h2>Derived Stats</h2>
+      <div class="derived">
+        <div class="box"><div class="k">Hit Points</div><div class="v" id="hp">10</div></div>
+        <div class="box"><div class="k">Stamina Points</div><div class="v" id="sp">10</div></div>
+        <div class="box"><div class="k">Action Points</div><div class="v" id="ap">10</div></div>
+        <div class="box"><div class="k">Healing Rate</div><div class="v" id="healing_rate">3</div></div>
+        <div class="box"><div class="k">Carry Load</div><div class="v" id="carry_load">50</div></div>
+        <div class="box"><div class="k">Passive Perception</div><div class="v" id="passive_perception">12</div></div>
+        <div class="box"><div class="k">Armor Class</div><div class="v" id="ac">10</div></div>
+        <div class="box"><div class="k">Damage Threshold</div><div class="v" id="dt">0</div></div>
+        <div class="box"><div class="k">Rad Resistance</div><div class="v" id="rad_resistance">DC 12</div></div>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="skills" id="skills"></div>
+
+      <h2>Equipment</h2>
+      <div class="field"><label>Armor</label><input id="armor" readonly></div>
+      <div class="field"><label>Current Weapon</label><input id="weapon" readonly></div>
+      <div class="field"><label>Equipment Package</label><div class="equip-list" id="equipment"></div></div>
+
+      <h2>Notes</h2>
+      <div class="notes" id="notes"></div>
+      <div class="mini-note">Custom Background is set to an <strong>850 cap</strong> budget, matching the rulebook. fileciteturn2file0L68-L76</div>
+      <div class="mini-note">The PDF sheet template comes from the uploaded fillable blank character sheet. fileciteturn1file1L1-L18</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const APP_DATA = {{ data|tojson }};
+const SKILL_ORDER = ["Guns","Energy Weapons","Explosives","Melee Weapons","Unarmed","Medicine","Lockpick","Crafting","Science","Sneak","Survival","Barter","Persuasion","Deception","Intimidation"];
+</script>
+<script src="/static/app.js"></script>
+</body>
+</html>
